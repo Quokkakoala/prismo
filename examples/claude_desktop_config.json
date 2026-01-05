@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "prismo": {
+      "command": "npx",
+      "args": ["@srestack/prismo"],
+      "env": {
+        "ANTHROPIC_API_KEY": "your-api-key-here"
+      }
+    }
+  }
+}

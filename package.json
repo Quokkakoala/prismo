@@ -1,0 +1,50 @@
+{
+  "name": "@srestack/prismo",
+  "version": "1.0.0",
+  "description": "AI-powered pre-mortem analysis tool - refracts your architecture into a spectrum of risks",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "prismo": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector tsx src/index.ts",
+    "test": "tsx src/test.ts",
+    "cli": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "keywords": [
+    "mcp",
+    "premortem",
+    "fmea",
+    "sre",
+    "reliability",
+    "risk-analysis",
+    "ai"
+  ],
+  "author": "Santosh Swamynathan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srestack/prismo"
+  },
+  "homepage": "https://srestack.dev/docs/prismo",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
